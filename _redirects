@@ -1,0 +1,10 @@
+# Netlify redirects для сайта Readymag
+# Важно: Netlify автоматически отдает существующие файлы перед применением редиректов
+
+# Редирект для Googlebot (_escaped_fragment_)
+/*?_escaped_fragment_=*  /snippets/:splat.html  200
+
+# Редирект всех запросов на index.html (SPA fallback)
+# Netlify автоматически отдает существующие файлы (dist, img, snippets, lottie) напрямую
+# Редирект применяется только если файл не существует
+/*  /index.html  200
